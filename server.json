@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/finra-fixed-income",
+  "title": "Finra Fixed Income",
+  "description": "FINRA Fixed Income aggregate market data (fleet #530).",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/finra-fixed-income",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-finra-fixed-income",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/finra-fixed-income/mcp"
+    }
+  ]
+}
