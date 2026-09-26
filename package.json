@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-finra-fixed-income",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "FINRA Fixed Income aggregate market data (fleet #530).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-516720144adac2997f72ee458d718c3bb1f704eac7585dd14de22d1292bdf6ef",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-ca368bc8f31d200571c05e19a409847366d01c5e1bf7f971171cbb7f82dcbf0e",
+    "sourceCommit": "91681e9a4a137fa0051d58e32f38c64b6334af5c"
   }
 }
