@@ -5,7 +5,7 @@ volumes, corporate and agency debt market breadth and sentiment, securitized
 product pricing and trading activity, and capped-volume series. Platform key
 (free FINRA Public credential); BYO supported.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1683+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1866+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
@@ -14,6 +14,9 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 - `finra_fixed_income_series({ dataset, start_date?, end_date?, limit? })` —
   fetch a series. With no date range it returns FINRA's latest published
   period; with `start_date`/`end_date` it returns that window.
+  Treasury datasets also take `product_category` (e.g. "Nominal Coupons") and
+  `benchmark` (e.g. "On-the-run") row filters, and then return summed volumes
+  per category and benchmark in `totals_across_returned_rows`.
 
 ## Scope
 
@@ -173,7 +176,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1683+ data sources. The
+Both URLs reach the same gateway and the same 1866+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
