@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-finra-fixed-income",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "FINRA Fixed Income aggregate market data (fleet #530).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-finra-fixed-income": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "finra-fixed-income"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-finra-fixed-income.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/finra-fixed-income",
   "pipeworx": {
-    "sourceHash": "v1-d8c9b38612d98b9489e64f216112d99f3d89f5d008f27bc71cb19c3111623f22",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "finra-fixed-income",
+    "gatewaySlug": "finra-fixed-income",
+    "sourceHash": "v1-5dd9b89d3074794d84bbf25d3683a245a00d9131794b7580d5ff7c8a3b60ce72",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
